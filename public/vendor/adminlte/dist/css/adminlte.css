@@ -10703,6 +10703,7 @@ body,
   left: inherit;
 }
 
+
 @supports not (-webkit-touch-callout: none) {
   .layout-fixed .wrapper .sidebar {
     height: calc(100vh - (3.5rem + 1px));
@@ -34974,6 +34975,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   -ms-flex-align: center;
   align-items: center;
   background-color: #e9ecef;
+  /* background-color: red; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -53008,5 +53010,9 @@ a.text-muted:hover {
 
 .dark-mode .border-dark {
   border-color: #4b545c !important;
+}
+
+aside{
+background-color: red !important;
 }
 /*# sourceMappingURL=adminlte.css.map */

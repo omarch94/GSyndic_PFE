@@ -17,7 +17,7 @@
     <div class="section_table">
         <div class="">
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover dataTable">
                 <thead>
                 <tr>
                     <th>Date de paiment</th>
@@ -70,5 +70,8 @@
                 document.getElementById('deleteForm'+paimentId).submit();
             }
         }
+        $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
     </script>
 @stop

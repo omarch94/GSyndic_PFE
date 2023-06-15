@@ -17,7 +17,7 @@
     <div class="section_table">
         <div class="">
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover dataTable">
                 <thead>
                 <tr>
                     <th>Numéro de facture</th>
@@ -162,6 +162,9 @@
                     }
                 });
             });
+            $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
         });
     </script>
 @stop

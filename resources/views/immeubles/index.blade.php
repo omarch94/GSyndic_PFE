@@ -12,12 +12,14 @@
 @stop
 
 @section('content')
+{{-- @section('plugins.Datatables', true) --}}
+
     @include('components.messages_alert')
 
     <div class="section_table">
         <div class="">
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover dataTable">
                 <thead>
                 <tr>
                     <th>nom</th>
@@ -77,5 +79,8 @@
                 document.getElementById('deleteForm'+immeubleId).submit();
             }
         }
+        $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
     </script>
 @stop

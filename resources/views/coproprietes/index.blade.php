@@ -43,7 +43,7 @@
     <div class="section_table">
         <div class="">
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover dataTable">
                 <thead>
                 <tr>
                     <th>nom</th>
@@ -102,6 +102,10 @@
             if (confirm('Êtes-vous sûr(e) de vouloir supprimer cet enregistrement?')) {
                 document.getElementById('deleteForm'+coproprieteId).submit();
             }
+     
         }
+        $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
     </script>
 @stop

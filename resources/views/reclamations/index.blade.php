@@ -6,7 +6,7 @@
     <div class="header my-4 d-flex justify-content-between">
         <h4 class="">Liste des Reclamations</h4>
         @can('reclamation-create')
-        <a href="/reclamations/create" class="d-block btn btn-success">nouveau Reclamations</a>
+        <a href="/reclamations/create" class="d-block btn btn-success">Nouvelle Réclamations</a>
         @endcan
     </div>
 @stop
@@ -17,7 +17,7 @@
     <div class="section_table">
         <div class="">
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover dataTable">
                 <thead>
                 <tr>
                     <th>Désignation</th>
@@ -167,5 +167,8 @@
                 });
             });
         });
+        $(document).ready(function() {
+    $('.dataTable').DataTable();
+  });
     </script>
 @stop
