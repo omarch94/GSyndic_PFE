@@ -13,14 +13,14 @@
     <div class="content">
         <div class="row">
             <div class="col-md-4">
-                <div class="statistic bg-primary p-4 d-flex align-items-center rounded">
+                <div class="statistic bg-primary p-4 d-flex align-items-center rounded" >
                     <div class="icon col-4">
                         <span style="font-size:60px">
                             <i class="fas fa-users"></i>
                         </span>
                     </div>
-                    <div class="col-8 pl-3">
-                        <div class="value" style="font-size:65px; line-height:65px"><b>{{\App\Models\User::all()->count()}}</b></div>
+                    <div class="col-8 pl-3 ">
+                        <div class="value" style="font-size:65px; line-height:65px ; "><b>{{\App\Models\User::all()->count()}}</b></div>
                         <div class="label" style="font-size:24px">Utilisateurs</div>
                     </div>
                 </div>
@@ -147,7 +147,17 @@
 
 @section('js')
     <script> console.log('Hi!');
-
+$('.value').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
     </script>
     
 @stop
