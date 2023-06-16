@@ -12,7 +12,7 @@ use App\Http\Controllers\FactureController;
 use App\Http\Controllers\PaimentController;
 use App\Http\Controllers\ReunionController;
 use App\Http\Controllers\ChargeController;
-
+use App\Http\Controllers\MeetingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -165,5 +165,20 @@ Route::middleware(['auth'])->group(function(){
         Route::delete('/{id}', [PaimentController::class, 'destroy'])->name('destroy');
     });
 
+//Meeting video chat
+Route::get('/nvmeeting', function () {
+    return view('videochat');
+});
+    Route::post("/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
 
+    Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
+    
+    Route::get("/meeting/{meetingId}", function($meetingId) {
+    
+        $METERED_DOMAIN = env('METERED_DOMAIN');
+        return view('reunions.meeting', [
+            'METERED_DOMAIN' => $METERED_DOMAIN,
+            'MEETING_ID' => $meetingId
+        ]);
+    });
 });
