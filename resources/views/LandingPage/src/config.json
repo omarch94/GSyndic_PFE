@@ -1,4 +1,4 @@
 {
     "discordInviteURL": "http://localhost:8000/login",
-    "appealsInviteURL": "https://discord.gg/ucRkByuMRU"
+    "appealsInviteURL": "http://localhost:8000/register"
 }

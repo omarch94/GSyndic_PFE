@@ -4,9 +4,13 @@ import valorantImage from '../assets/content/valorant-light.png';
 const TeamMember = ({ name, role, description, image ,socialLinks}) => {
   return (
     <div className="team-member">
+      <div className='imageMember'>
+
       <img src={image} alt={name} className="member-image" />
+      </div>
       <h3 className="member-name">{name}</h3>
       <h4 className="member-role">{role}</h4>
+
       <p className="member-description">{description}</p>
       <div className="social-links">
         {socialLinks?.map((link, index) => (
@@ -81,11 +85,17 @@ const MeetTheTeam = () => {
   return (
     <div className="meet-the-team">
       <h2>Meet the Team</h2>
-      <div className="team-members">
-        {teamMembers.map((member, index) => (
-          <TeamMember key={index} name={member.name} role={member.role} description={member.description} image={member.image} socialLinks={member.socialLinks}  />
-        ))}
-      </div>
+      {teamMembers.map((member, index) => (
+        <div className="team-member-container" key={index}>
+          <TeamMember
+            name={member.name}
+            role={member.role}
+            description={member.description}
+            image={member.image}
+            socialLinks={member.socialLinks}
+          />
+        </div>
+      ))}
     </div>
   );
 };

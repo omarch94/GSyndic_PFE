@@ -13,13 +13,13 @@ function Home() {
       </Helmet>
       <Header>
         <div>
-          <h1>G Syndic</h1>
+          <h1><span className='G'>G</span> Syndic</h1>
           <p>
           "Bienvenue dans notre application de gestion de syndic, conçue pour vous faciliter la vie en simplifiant toutes les tâches complexes liées à la gestion de votre copropriété. Découvrez comment notre solution innovante peut transformer votre expérience de syndic."
           </p>
         </div>
       </Header>
-      <main>
+      <main className="main-content">
 
             <h2 className='contentblock-text1'>Quelques fonctionnalités clés!</h2>
 
@@ -118,7 +118,7 @@ function Home() {
 
 
 <div className='supportblock-actions'>
-            <PrimaryButton text="Inscrivez-vous!" border ext destination="https://ko-fi.com/communityarchitects" arrow />
+            <PrimaryButton text="Inscrivez-vous!" border ext destination="http:localhost:8000/register" arrow />
           </div>
         </div>
 

@@ -8,13 +8,13 @@ import { Helmet } from 'react-helmet';
 
 const links = [
   {
-    name: "Content",
+    name: "L'équipe",
     destination: "content",
   },
-  {
-    name: "L'équipe",
-    destination: "applications"
-  },
+  // {
+  //   name: "L'équipe",
+  //   destination: "applications"
+  // },
   /*   
   {
     name: "Appeals",
