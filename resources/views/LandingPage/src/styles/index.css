@@ -509,7 +509,7 @@ svg.disabled path {
 
 .contact-form {
   border: 1px solid #333;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -523,10 +523,14 @@ svg.disabled path {
 .contact-form input,
 .contact-form textarea {
   margin-bottom: 10px;
+  margin-left: 20px;
   padding: 8px;
   border: 1px solid #706d6d;
   border-radius: 4px;
   background-color: #f2f0f092;
+}
+.contact-form label{
+  font-weight:bolder ;
 }
 
 .contact-form textarea {
@@ -540,6 +544,9 @@ svg.disabled path {
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-form button:hover {

@@ -103,10 +103,10 @@ function Content() {
         </div>
           </div>
           <div className='contentblock-image'>
-            <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/content/disabilitypride-dark.png')
+            <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
+              require('../assets/content/omarcherti.png')
               :
-              require('../assets/content/disabilitypride-light.png')}
+              require('../assets/content/omarcherti.png')}
             />
           </div>
         </ContentBlock>
@@ -137,10 +137,10 @@ function Content() {
         </div>
           </div>
           <div className='contentblock-image'>
-            <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/content/disabilitypride-dark.png')
+            <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
+              require('../assets/content/omarcherti.png')
               :
-              require('../assets/content/disabilitypride-light.png')}
+              require('../assets/content/omarcherti.png')}
             />
           </div>
         </ContentBlock>
