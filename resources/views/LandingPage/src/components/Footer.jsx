@@ -18,7 +18,7 @@ function Footer() {
           <div>
             <span><b>GSyndic</b></span>
             <br />
-            <span className='copyright'>© 2020 - {new Date().getFullYear()} All rights reserved</span>
+            <span className='copyright'>©{new Date().getFullYear()} All rights reserved</span>
           </div>
         </div>
         <div className='footer-socials'>
