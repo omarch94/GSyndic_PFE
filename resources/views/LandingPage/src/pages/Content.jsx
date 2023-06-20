@@ -145,17 +145,6 @@ function Content() {
           </div>
         </ContentBlock>
 
-        <div className='supportblock'>
-          <h2>Are you interested in supporting our editors?</h2>
-          <p>
-            Check out our Ko-Fi page! You can directly help us with financially 
-            compensating our content editors for their hard work. Thanks!
-          </p>
-          {/* <div className='supportblock-actions'>
-            <PrimaryButton text="Donate" border ext destination="https://ko-fi.com/communityarchitects" arrow />
-          </div> */}
-          <ContactForm/>
-        </div>
 
       </main>
     </>

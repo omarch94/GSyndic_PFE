@@ -33,7 +33,7 @@ require('../assets/content/Application.png')}
       </Header>
       <main className="main-content">
 
-            <h2 className='contentblock-text1'>Quelques fonctionnalités</h2>
+            <h2 className='contentblock-text1'> * Nos Fonctionnalités</h2>
 
         <ContentBlock animate>
           <div className='contentblock-text'>
@@ -51,7 +51,7 @@ require('../assets/content/Application.png')}
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
               require('../assets/illustrations/camp-dark.png')
               :
-              require('../assets/illustrations/opportunities-light.svg').default}
+              require('../assets/illustrations/gestionDocW.png')}
             />
           </div>
         </ContentBlock>
@@ -67,7 +67,7 @@ require('../assets/content/Application.png')}
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
               require('../assets/illustrations/helpdesk-dark.png')
               :
-              require('../assets/illustrations/helpdesk-light.svg').default}
+              require('../assets/illustrations/CommPersoW.png')}
             />
           </div>
         </ContentBlock>
@@ -82,7 +82,7 @@ require('../assets/content/Application.png')}
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
               require('../assets/illustrations/suiviDep.png')
               :
-              require('../assets/illustrations/camp-light.svg').default}
+              require('../assets/illustrations/suiviDepW.png')}
             />
           </div>
         </ContentBlock>
@@ -98,7 +98,7 @@ require('../assets/content/Application.png')}
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
               require('../assets/illustrations/gestionRes.png')
               :
-              require('../assets/illustrations/showcase-light.svg').default}
+              require('../assets/illustrations/gestionResW.png')}
             />
           </div>
         </ContentBlock>

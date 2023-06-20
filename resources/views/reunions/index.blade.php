@@ -6,7 +6,7 @@
     <div class="header my-4 d-flex justify-content-between">
         <h4 class="">Liste des Reunions</h4>
         @can('reunion-create')
-        <a href="/reunions/create" class="d-block btn btn-success">nouveau Reunion</a>
+        <a href="/reunions/createMeeting" class="d-block btn btn-success">Nouvelle Reunion</a>
         @endcan
     </div>
 @stop

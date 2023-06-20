@@ -255,6 +255,7 @@ return [
     'use_route_url' => false,
     'dashboard_url' => 'dashboard',
     'logout_url' => 'logout',
+    'vote_url'=>'vote',
     'login_url' => 'login',
     'register_url' => 'register',
     'password_reset_url' => 'password/reset',
@@ -374,6 +375,11 @@ return [
             'url'  => 'paiments',
             'icon' => 'fas fa-fw fa-money-bill',
             'can'  => 'paiment-list'
+        ],
+        [
+            'text' => 'Votes',
+            'url'  => 'votes',
+            'icon' => 'fas fa-fw fa-vote-yea',
         ],
         [
             'header' => 'ACCOUNT SETTINGS',

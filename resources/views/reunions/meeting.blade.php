@@ -28,13 +28,14 @@
 
 
     </head>
+    @section('content')
     <body class="antialiased">
         
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
             <div id="waitingArea" class="max-h-screen">
                 <div class="py-4">
-                    <h1 class="text-2xl">Meeting Lobby</h1>
+                    <h1 class="text-2xl">Salle de réunion</h1>
                 </div>
     
     
@@ -77,7 +78,7 @@
 
                         <div>
                             <button id='joinMeetingBtn' class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                Join Meeting
+Rejoindre meeting
                             </button>
                         </div>
                     </div>
@@ -127,7 +128,7 @@
 
         <div id="leaveMeetingView" class="hidden">
             <h1 class="text-center text-3xl mt-10 font-bold">
-                You have left the meeting 
+                <a href="/reunions/create">Remplissez le PV</a>
             </h1>
         </div>
     </body>

@@ -211,7 +211,7 @@ button {
 }
 .contentblock-text1 {
   /* width: 458px; */
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   z-index: 10;
 }
@@ -557,10 +557,7 @@ svg.disabled path {
 .imgApp{
   height: auto;
   width: 45%;
-  /* border: 5px solid black; */
-  /* border-bottom: 10px solid black; */
-  /* border-radius: 10px; */
-  /* outline: #0D0E22; */
+ 
 }
 .Appl{
   display: flex;

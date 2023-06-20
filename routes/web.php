@@ -148,6 +148,9 @@ Route::middleware(['auth'])->group(function(){
     Route::prefix('reunions')->name('reunions.')->group(function(){
         Route::get('/', [ReunionController::class, 'index'])->name('index');
         Route::get('/create', [ReunionController::class,'create'])->name('create');
+   
+    Route::get("/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
+
         Route::post('/', [ReunionController::class, 'store'])->name('store');
         Route::get('/{id}/edit', [ReunionController::class, 'edit'])->name('edit');
         Route::put('/{id}', [ReunionController::class, 'update'])->name('update');
@@ -168,12 +171,8 @@ Route::middleware(['auth'])->group(function(){
     });
 
 //Meeting video chat
-Route::get('/nvmeeting', function () {
-    return view('videochat');
-});
-    Route::post("/createMeeting", [MeetingController::class, 'createMeeting'])->name("createMeeting");
 
-    Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
+    // Route::post("/validateMeeting", [MeetingController::class, 'validateMeeting'])->name("validateMeeting");
     
     Route::get("/meeting/{meetingId}", function($meetingId) {
     

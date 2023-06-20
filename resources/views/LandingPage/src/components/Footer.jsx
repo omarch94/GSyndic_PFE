@@ -22,19 +22,14 @@ function Footer() {
           </div>
         </div>
         <div className='footer-socials'>
-          <a title='Discord' href={config.discordInviteURL} target="_blank" rel='noreferrer'>
-            <DiscordIcon className='social-icon' />
-          </a>
-          <a title='Twitter' href="https://twitter.com/cmty_architects" target="_blank" rel='noreferrer'>
+        <a title='Twitter' href="https://twitter.com/" target="_blank" rel='noreferrer'>
             <TwitterIcon className='social-icon' />
           </a>
-          <a title='GitHub' href="https://github.com/communityarchitects" target="_blank" rel='noreferrer'>
+          <a title='GitHub' href="https://github.com/jihadlaziba" target="_blank" rel='noreferrer'>
             <GitHubIcon className='social-icon' />
           </a>
-          <a title='YouTube' href="https://www.youtube.com/@cmty_architects" target="_blank" rel='noreferrer'>
-            <YouTubeIcon className='social-icon' />
-          </a>
-          <a title='LinkedIn' href="https://www.linkedin.com/company/communityarchitects/" target="_blank" rel='noreferrer'>
+        
+          <a title='LinkedIn' href="https://www.linkedin.com/jihadlaziba" target="_blank" rel='noreferrer'>
             <LinkedInIcon className='social-icon' />
           </a>
         </div>
