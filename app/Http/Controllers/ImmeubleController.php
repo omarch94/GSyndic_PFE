@@ -6,7 +6,9 @@ use App\Http\Requests\ImmeubleRequest;
 use App\Models\Immeuble;
 use App\Models\Ville;
 use Illuminate\Http\Request;
-
+use App\Exports\ImmeublesExport;
+use App\Imports\ImmeublesImport;
+use Maatwebsite\Excel\Facades\Excel;
 class ImmeubleController extends Controller
 {
     public function __construct(){
@@ -119,5 +121,22 @@ class ImmeubleController extends Controller
         $villeId = $request->input('ville_id');
         $immeubles = Immeuble::where('ville_id', $villeId)->get();
         return response()->json(['immeubles' => $immeubles]);
+    }
+
+
+    //
+    public function export() 
+    {
+        return Excel::download(new ImmeublesExport, 'imeuble.xlsx');
+    }
+       
+    /**
+    * @return \Illuminate\Support\Collection
+    */
+    public function import() 
+    {
+        Excel::import(new ImmeublesImport,request()->file('file'));
+               
+        return back();
     }
 }

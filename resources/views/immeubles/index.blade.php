@@ -18,6 +18,13 @@
 
     <div class="section_table">
         <div class="">
+            {{-- <form action="{{ route('immeubles.import') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="file" class="form-control">
+                <br>
+                <button class="btn btn-success">Importez Immeubles Data</button>
+            </form> --}}
+
 
             <table class="table table-striped table-hover dataTable">
                 <thead>
@@ -30,6 +37,12 @@
                     <th>Nombre de logement</th>
                     <th>année de construction</th>
                     <th>Action</th>
+                </tr>
+                <tr>
+                    <th colspan="3">
+                        List des immeubles
+                        <a class="btn btn-warning float-end" href="{{ route('immeubles.export') }}">Export Immeubles</a>
+                    </th>
                 </tr>
                 </thead>
                 <tbody>

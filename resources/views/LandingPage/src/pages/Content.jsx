@@ -80,7 +80,7 @@ function Content() {
         <ContentBlock animate>
           <div className='contentblock-text'>
             <div className='contentblock-tagrow'>
-              <h2>CHERTI OMAR</h2>
+              <h2>BENAYIBA ADAM</h2>
               <Tag color="green">Full Stack Web Developer</Tag>
             </div>
             <p>
@@ -90,23 +90,23 @@ function Content() {
           
             <div className='socials'>
          
-          <a title='Twitter' href="https://twitter.com/cmty_architects" target="_blank" rel='noreferrer'>
+          <a title='Twitter' href="https://twitter.com/" target="_blank" rel='noreferrer'>
             <TwitterIcon className='social-icon' />
           </a>
-          <a title='GitHub' href="https://github.com/communityarchitects" target="_blank" rel='noreferrer'>
+          <a title='GitHub' href="https://github.com/adambenajiba" target="_blank" rel='noreferrer'>
             <GitHubIcon className='social-icon' />
           </a>
         
-          <a title='LinkedIn' href="https://www.linkedin.com/company/communityarchitects/" target="_blank" rel='noreferrer'>
+          <a title='LinkedIn' href="https://www.linkedin.com/" target="_blank" rel='noreferrer'>
             <LinkedInIcon className='social-icon' />
           </a>
         </div>
           </div>
           <div className='contentblock-image'>
             <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/content/omarcherti.png')
+              require('../assets/content/adamFoto.png')
               :
-              require('../assets/content/omarcherti.png')}
+              require('../assets/content/adamFoto.png')}
             />
           </div>
         </ContentBlock>
@@ -114,7 +114,7 @@ function Content() {
         <ContentBlock animate>
           <div className='contentblock-text'>
             <div className='contentblock-tagrow'>
-              <h2>CHERTI OMAR</h2>
+              <h2>LAZIBA JIHAD</h2>
               <Tag color="red">Full Stack Web Developer</Tag>
             </div>
             <p>
@@ -124,23 +124,23 @@ function Content() {
            
             <div className='socials'>
          
-          <a title='Twitter' href="https://twitter.com/cmty_architects" target="_blank" rel='noreferrer'>
+          <a title='Twitter' href="https://twitter.com/" target="_blank" rel='noreferrer'>
             <TwitterIcon className='social-icon' />
           </a>
-          <a title='GitHub' href="https://github.com/communityarchitects" target="_blank" rel='noreferrer'>
+          <a title='GitHub' href="https://github.com/jihadlaziba" target="_blank" rel='noreferrer'>
             <GitHubIcon className='social-icon' />
           </a>
         
-          <a title='LinkedIn' href="https://www.linkedin.com/company/communityarchitects/" target="_blank" rel='noreferrer'>
+          <a title='LinkedIn' href="https://www.linkedin.com/jihadlaziba" target="_blank" rel='noreferrer'>
             <LinkedInIcon className='social-icon' />
           </a>
         </div>
           </div>
           <div className='contentblock-image'>
             <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/content/omarcherti.png')
+              require('../assets/content/JihadFoto.png')
               :
-              require('../assets/content/omarcherti.png')}
+              require('../assets/content/JihadFoto.png')}
             />
           </div>
         </ContentBlock>

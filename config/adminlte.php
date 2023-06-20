@@ -64,7 +64,7 @@ return [
     */
 
     'logo' => '<b>G</b>Syndic',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo3.png',
+    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo3N.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -86,7 +86,7 @@ return [
     'auth_logo' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo3.png',
+            'path' => 'vendor/adminlte/dist/img/AdminLTELogo3N.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -109,7 +109,7 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo3.png',
+            'path' => 'vendor/adminlte/dist/img/AdminLTELogo3N.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,

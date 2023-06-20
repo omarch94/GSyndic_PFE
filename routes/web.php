@@ -77,7 +77,9 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/{id}/afficher', [ImmeubleController::class, 'show'])->name('show');
         Route::delete('/{id}', [ImmeubleController::class, 'destroy'])->name('destroy');
         Route::get('/get-immeubles', [ImmeubleController::class, 'getImmeubles'])->name('immeubles');
-    });
+        Route::get('immeubles-export', [ImmeubleController::class,'export'])->name('export');
+        Route::post('immeubles-import',[ImmeubleController::class, 'import'])->name('import');   
+     });
 
     Route::prefix('coproprietes')->name('coproprietes.')->group(function(){
         Route::get('/', [CoproprieteController::class, 'index'])->name('index');

@@ -11,17 +11,29 @@ function Home() {
         <title>G Syndic</title>
         {/* <link rel="canonical" href="https://community-architects.net" /> */}
       </Helmet>
+      
       <Header>
-        <div>
-          <h1><span className='G'>G</span> Syndic</h1>
+      <div >
+      <h1><span className='G'>G</span> Syndic</h1>
+        <div className='Appl'>
           <p>
           "Bienvenue dans notre application de gestion de syndic, conçue pour vous faciliter la vie en simplifiant toutes les tâches complexes liées à la gestion de votre copropriété. Découvrez comment notre solution innovante peut transformer votre expérience de syndic."
           </p>
+        <img  className="imgApp"
+
+src={theme === 'dark' ?
+require('../assets/content/ApplicationW.png')
+:
+require('../assets/content/Application.png')}
+        
+        // src={require('../assets/content/Application.png')}
+        />
+        </div>
         </div>
       </Header>
       <main className="main-content">
 
-            <h2 className='contentblock-text1'>Quelques fonctionnalités clés!</h2>
+            <h2 className='contentblock-text1'>Quelques fonctionnalités</h2>
 
         <ContentBlock animate>
           <div className='contentblock-text'>
@@ -37,7 +49,7 @@ function Home() {
           </div>
           <div className='contentblock-image'>
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/illustrations/opportunities-dark.svg').default
+              require('../assets/illustrations/camp-dark.png')
               :
               require('../assets/illustrations/opportunities-light.svg').default}
             />
@@ -53,7 +65,7 @@ function Home() {
           </div>
           <div className='contentblock-image'>
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/illustrations/helpdesk-dark.svg').default
+              require('../assets/illustrations/helpdesk-dark.png')
               :
               require('../assets/illustrations/helpdesk-light.svg').default}
             />
@@ -68,7 +80,7 @@ function Home() {
           </div>
           <div className='contentblock-image'>
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/illustrations/camp-dark.svg').default
+              require('../assets/illustrations/suiviDep.png')
               :
               require('../assets/illustrations/camp-light.svg').default}
             />
@@ -77,21 +89,21 @@ function Home() {
 
         <ContentBlock animate r>
           <div className='contentblock-text'>
-            <h2>Réservation des équipements</h2>
-            <p>
-            Réservez facilement les espaces communs tels que les salles de réunion, les jardins ou les terrains de sport via notre système de réservation convivial.
+          <h2>Gestion des résidents</h2>
+          <p>
+            Suivez facilement les informations clés de chaque résident, tels que les coordonnées, les paiements et les demandes de maintenance. Notre interface conviviale vous permet d'accéder rapidement à toutes les informations nécessaires.
             </p>
           </div>
           <div className='contentblock-image'>
             <img className='no-touch' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/illustrations/showcase-dark.svg').default
+              require('../assets/illustrations/gestionRes.png')
               :
               require('../assets/illustrations/showcase-light.svg').default}
             />
           </div>
         </ContentBlock>
 
-        <ContentBlock animate l>
+        {/* <ContentBlock animate l>
           <div className='contentblock-text'>
             <h2>Gestion des résidents</h2>
             <p>
@@ -105,7 +117,7 @@ function Home() {
               require('../assets/illustrations/podium-light.svg').default}
             />
           </div>
-        </ContentBlock>
+        </ContentBlock> */}
 
         <div className='supportblock'>
           <h2>Découvrez la simplicité de la gestion de votre syndic.
