@@ -131,4 +131,6 @@ class FactureController extends Controller
             return redirect()->back()->withErrors([$e->getMessage()]);
         }
     }
+
+    
 }

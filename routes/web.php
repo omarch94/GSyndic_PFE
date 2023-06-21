@@ -13,6 +13,8 @@ use App\Http\Controllers\PaimentController;
 use App\Http\Controllers\ReunionController;
 use App\Http\Controllers\ChargeController;
 use App\Http\Controllers\MeetingController;
+use App\Http\Controllers\PDFController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -143,6 +145,8 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/{id}/afficher', [FactureController::class, 'show'])->name('show');
         Route::delete('/{id}', [FactureController::class, 'destroy'])->name('destroy');
         Route::post('/modifier_etat_facture', [FactureController::class, 'modifierEtatFacture'])->name('modifier_etat_acture');
+        Route::get('send-email-pdf', [PDFController::class, 'index']);
+
     });
 
     Route::prefix('reunions')->name('reunions.')->group(function(){

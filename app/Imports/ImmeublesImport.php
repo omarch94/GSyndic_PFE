@@ -6,7 +6,7 @@ use App\Models\Immeuble;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class ImmeublesImport implements ToModel
+class ImmeublesImport implements ToModel,WithHeadingRow
 {
     /**
     * @param array $row
@@ -17,12 +17,11 @@ class ImmeublesImport implements ToModel
     {
         return new Immeuble([
             'nom'     => $row['nom'],
-            'adresse'     => $row['adresse'],
-            'code_postal'     => $row['code_postal'],
-            'ville_id'     => $row['name'],
-            'nb_etages'     => $row['name'],
-            'nb_logements'     => $row['nb'],
-            'description'=> $row['description']
+            'adresse'     => $row['Adresse'],
+            'code_postal'     => $row['Code Postal'],
+            'nb_etages'     => $row["Nombre d'étage"],
+            'nb_logements'     => $row['Nombre de logement'],
+            'description'=> $row['Description']
 
 
         ]);
