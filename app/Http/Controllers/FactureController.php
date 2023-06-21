@@ -8,6 +8,7 @@ use App\Models\Copropriete;
 use App\Models\EtatFacture;
 use App\Models\Facture;
 use App\Http\Requests\FactureRequest;
+use PDF;
 
 class FactureController extends Controller
 {
@@ -132,5 +133,18 @@ class FactureController extends Controller
         }
     }
 
-    
+    public function generatePDF()
+    {
+        $factures = Facture::get();
+  
+        $data = [
+            'title' => 'Welcome to Gsyndic.com',
+            'date' => date('m/d/Y'),
+            'factures' => $factures
+        ]; 
+            
+        $pdf = PDF::loadView('factures.facturePDF', $data);
+     
+        return $pdf->download('Facture.pdf');
+    }
 }

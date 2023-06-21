@@ -145,7 +145,7 @@ Route::middleware(['auth'])->group(function(){
         Route::get('/{id}/afficher', [FactureController::class, 'show'])->name('show');
         Route::delete('/{id}', [FactureController::class, 'destroy'])->name('destroy');
         Route::post('/modifier_etat_facture', [FactureController::class, 'modifierEtatFacture'])->name('modifier_etat_acture');
-        Route::get('send-email-pdf', [PDFController::class, 'index']);
+        Route::get('generate-pdf', [FactureController::class, 'generatePDF']);
 
     });
 

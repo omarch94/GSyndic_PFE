@@ -16,6 +16,7 @@
 
     <div class="section_table">
         <div class="">
+            <a href="/factures/generate-pdf" class="text-info me-1">PDF</a>
 
             <table class="table table-striped table-hover dataTable">
                 <thead>
