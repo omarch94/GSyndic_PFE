@@ -5,3 +5,7 @@
 .hidden {
     display: none;
 }
+
+aside{
+    background-color: green;
+}

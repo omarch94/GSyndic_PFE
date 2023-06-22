@@ -352,6 +352,9 @@ svg.disabled path {
   user-select: none;
  
 }
+.contentblock-image {
+  padding: 20px;
+}
 .no-touch1 {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -361,8 +364,10 @@ svg.disabled path {
   -webkit-user-drag: none;
   user-select: none;
   border-radius: 10%;
- width: 300px;
- height: 300px;
+ width: 250px;
+ height: 250px;
+
+
 }
 
 ::-webkit-scrollbar {
@@ -404,6 +409,8 @@ svg.disabled path {
   .contentblock-image img {
     display: none;
   }
+
+
 
   .contentblock.l,
   .contentblock.r {
@@ -507,53 +514,10 @@ svg.disabled path {
   opacity: 1;
 }
 
-
-.contact-form {
-  border: 1px solid #333;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
 /* .contact-form div{
   display: flex;
   gap: 50px;
 } */
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  padding: 8px;
-  border: 1px solid #706d6d;
-  border-radius: 4px;
-  background-color: #f2f0f092;
-}
-.contact-form label{
-  font-weight:bolder ;
-}
-
-.contact-form textarea {
-  height: 120px;
-}
-
-.contact-form button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  cursor: pointer;
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-
-.contact-form button:hover {
-  background-color: #555;
-}
-
 .imgApp{
   height: auto;
   width: 45%;

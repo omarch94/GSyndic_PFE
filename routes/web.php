@@ -162,6 +162,8 @@ Route::middleware(['auth'])->group(function(){
         Route::delete('/{id}', [ReunionController::class, 'destroy'])->name('destroy');
         Route::post('/ajouter_proces_verbal', [ReunionController::class, 'uploadProcesVerbal'])->name('upload_proces_verbal');
         Route::get('/proces_verbal/{id}', [ReunionController::class, 'afficherProcesVerbal'])->name('afficher_proces_verbal');
+        Route::get('generate-pdf/', [ReunionController::class, 'generatePDF']);
+ 
     });
 
     Route::prefix('paiment')->name('paiment.')->group(function(){

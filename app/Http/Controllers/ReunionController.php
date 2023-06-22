@@ -6,6 +6,7 @@ use App\Http\Requests\AjouterProcesVerbalRequest;
 use App\Models\Immeuble;
 use App\Models\Reunion;
 use App\Http\Requests\ReunionRequest;
+use PDF;
 
 class ReunionController extends Controller
 {
@@ -140,5 +141,19 @@ class ReunionController extends Controller
         }
 
         return response()->file($cheminPDF);
+    }
+
+    public function generatePDF()
+    {
+        $reunions=Reunion::get();
+        $data = [
+            'title' => 'GSyndic',
+            'date' => date('m/d/Y'),
+            'reunions' => $reunions
+        ]; 
+            
+        $pdf = PDF::loadView('reunions.pvPDF', $data);
+     
+        return $pdf->download('pv.pdf');
     }
 }

@@ -19,7 +19,7 @@ class PDFController extends Controller
         $factures = Facture::get();
   
         $data = [
-            'title' => 'Welcome to Gsyndic.com',
+            'title' => ' Gsyndic.com',
             'date' => date('m/d/Y'),
             'factures' => $factures
         ]; 

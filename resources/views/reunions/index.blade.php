@@ -13,6 +13,7 @@
 
 @section('content')
     @include('components.messages_alert')
+       <a href="/reunions/generate-pdf/" >telecharger l'état des réunions</a>
 
     <div class="section_table">
         <div class="">
@@ -45,6 +46,7 @@
                             @else
                                 <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ajouterProcesVerbalModal{{$reunion->id}}">ajouter un procés verbal</button>
                             @endif
+
                         </td>
                         <td>
                             <a href="/reunions/{{$reunion->id}}/afficher" class="text-info me-1"><i class="far fa-fw fa-eye"></i></a>
@@ -70,6 +72,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
+
                                     </div>
                                     <form id="ajouterProcesVerbalForm" enctype="multipart/form-data" method="post" action="/reunions/ajouter_proces_verbal">
                                         @csrf

@@ -126,8 +126,8 @@ jquery("#joinMeetingBtn").on("click", async function () {
        * sharing the microphone after joining the meeting
        */
       if (micOn) {
-        jquery("#toggleMicrophone").removeClass("bg-red-400");
-        jquery("#toggleMicrophone").addClass("bg-green-500");
+        jquery("#toggleMicrophone").removeClass("bg-green-400");
+        jquery("#toggleMicrophone").addClass("bg-red-500");
         await meeting.startAudio();
       }
 
@@ -243,13 +243,13 @@ jquery("#joinMeetingBtn").on("click", async function () {
 
   jquery("#toggleMicrophone").on("click",  async function() {
     if (micOn) {
-      jquery("#toggleMicrophone").removeClass("bg-red-500");
-      jquery("#toggleMicrophone").addClass("bg-green-400");
+      jquery("#toggleMicrophone").removeClass("bg-green-500");
+      jquery("#toggleMicrophone").addClass("bg-red-500");
       micOn = false;
       await meeting.stopAudio();
     } else {
-      jquery("#toggleMicrophone").removeClass("bg-green-400");
-      jquery("#toggleMicrophone").addClass("bg-red-500");
+      jquery("#toggleMicrophone").removeClass("bg-red-500");
+      jquery("#toggleMicrophone").addClass("bg-green-500");
       micOn = true;
       await meeting.startAudio();
     }
@@ -260,8 +260,8 @@ jquery("#joinMeetingBtn").on("click", async function () {
     if (cameraOn) {
       jquery("#toggleCamera").removeClass("bg-green-500");
       jquery("#toggleCamera").addClass("bg-red-400");
-      jquery("#toggleScreen").removeClass("bg-red-500");
-      jquery("#toggleScreen").addClass("bg-green-400");
+      jquery("#toggleScreen").removeClass("bg-green-500");
+      jquery("#toggleScreen").addClass("bg-red-400");
       cameraOn = false;
       await meeting.stopVideo();
       const tracks = localVideoStream.getTracks();
@@ -283,8 +283,8 @@ jquery("#joinMeetingBtn").on("click", async function () {
   
   jquery("#toggleScreen").on("click",  async function() {
     if (screenSharingOn) {
-      jquery("#toggleScreen").removeClass("bg-red-500");
-      jquery("#toggleScreen").addClass("bg-green-400");
+      jquery("#toggleScreen").removeClass("bg-green-500");
+      jquery("#toggleScreen").addClass("bg-red-400");
       screenSharingOn = false;
       await meeting.stopVideo();
       const tracks = localVideoStream.getTracks();
@@ -295,8 +295,8 @@ jquery("#joinMeetingBtn").on("click", async function () {
       jquery("#localVideoTag")[0].srcObject = null;
 
     } else {
-      jquery("#toggleScreen").removeClass("bg-green-400");
-      jquery("#toggleScreen").addClass("bg-red-500");
+      jquery("#toggleScreen").removeClass("bg-red-400");
+      jquery("#toggleScreen").addClass("bg-green-500");
       jquery("#toggleCamera").removeClass("bg-red-500");
       jquery("#toggleCamera").addClass("bg-green-400");
       screenSharingOn = true;

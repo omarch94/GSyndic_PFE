@@ -4,7 +4,7 @@
 
 @section('content_header')
     <div class="header my-4 d-flex justify-content-between">
-        <h4 class="">Ajouter un nouvau reunion</h4>
+        <h4 class="">Ajouter un nouvau PV</h4>
         <a href="/reunions" class="d-block btn btn-success">Reunions</a>
     </div>
 @stop
@@ -71,7 +71,9 @@
                         @enderror
                     </div>
                     <div class="m-0 clearfix">
-                        <input class="btn btn-primary float-right" type="submit" value="Ajouter"/>
+                        <input class="btn btn-primary float-right" type="submit" value="Ajouter" />
+                        {{-- <a href="/reunions/generate-pdf" class="d-block btn btn-success">Nouveau PV</a> --}}
+                        
                     </div>
                 </div>
             </form>
@@ -79,4 +81,17 @@
     </div>
 
 @stop
-
+@section('javascript')
+<script>
+    function generatePDFConfirmation() {
+      var confirmation = confirm("Are you sure you want to generate the PDF?");
+      if (confirmation) {
+        // If the user confirms, perform the action
+        window.location.href = "/reunions/generate-pdf";
+      } else {
+        // If the user cancels, do nothing
+        return false;
+      }
+    }
+  </script>
+@stop

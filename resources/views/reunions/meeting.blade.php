@@ -60,7 +60,15 @@
                         <div class="flex space-x-2 items-center">
                             <label>
                                 Name:
-                                <input class="text-xs" id="username" type="text"  placeholder="Name"/>
+                                <select id="username" >
+                                    <?php
+                               $users = \App\Models\User::where('id', '!=', 1)->get();
+                                        ?>
+                                    @foreach( $users as $user){
+                                    <option value="{{$user->id}}" selected>{{$user->nom}}</option>
+                                    }
+                                    @endforeach
+                                </select>
                             </label>
     
                             <label>
@@ -89,7 +97,10 @@ Rejoindre meeting
         </div> 
 
         <div id='meetingView' class="hidden flex w-screen h-screen space-x-4 p-10">
-
+            <div  class=" left-5 h-8 w-90% bg-gray-700 rounded-full bottom-5 text-white text-center font-bold pt-1 z-index-2">
+                <span id="selectedOption"></span>
+            </div>
+            
             <div id="activeSpeakerContainer" class=" bg-gray-900 rounded-3xl flex-1 flex relative">
                 <video id="activeSpeakerVideo" src="" autoplay class=" object-contain w-full rounded-t-3xl"></video>
                 <div id="activeSpeakerUsername" class="hidden absolute h-8 w-full bg-gray-700 rounded-b-3xl bottom-0 text-white text-center font-bold pt-1">
@@ -127,9 +138,18 @@ Rejoindre meeting
         </div>
 
         <div id="leaveMeetingView" class="hidden">
-            <h1 class="text-center text-3xl mt-10 font-bold">
+            <h1 class="text-center text-3xl mt-10 font-bold ">
                 <a href="/reunions/create">Remplissez le PV</a>
             </h1>
         </div>
+        <script>
+            const selectElement = document.getElementById('username');
+            const spanElement = document.getElementById('selectedOption');
+        
+            selectElement.addEventListener('change', function() {
+                const selectedOption = selectElement.options[selectElement.selectedIndex].text;
+                spanElement.textContent = selectedOption;
+            });
+        </script>
     </body>
 </html>

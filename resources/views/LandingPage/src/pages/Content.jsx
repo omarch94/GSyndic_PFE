@@ -49,9 +49,7 @@ function Content() {
               <Tag color="red">Full Stack Web Developer</Tag>
             </div>
             <p>
-              We will be discussing the language of disability as well
-              as bringing awareness with your community interactions.
-            </p>
+            Passionné et polyvalent qui a su réorienter sa carrière avec succès. Avec un bagage initial en finance, Omar a entrepris une reconversion audacieuse dans le domaine du développement web. Grâce à sa détermination et à sa volonté d'apprendre, il a acquis une expertise solide en langages front-end tels que HTML, CSS et JavaScript, ainsi qu'en frameworks modernes comme React et Angular. Du côté du développement back-end, Omar s'est spécialisé dans des langages comme Python et Node.js, tout en développant des compétences en gestion de bases de données. Sa combinaison unique de connaissances en finance et en développement web lui permet de créer des applications web complètes, intuitives et adaptées aux besoins spécifiques du secteur financier. Omar est un exemple inspirant de reconversion réussie et démontre la volonté d'évoluer et d'explorer de nouvelles opportunités professionnelles.            </p>
             {/* <div className='contentblock-actions'>
               <PrimaryButton text="Watch Video" ext destination="https://www.youtube.com/watch?v=nefJID_9Jug" arrow />
             </div> */}
@@ -78,7 +76,15 @@ function Content() {
         </ContentBlock>
 
         <ContentBlock animate>
-          <div className='contentblock-text'>
+          <div className='contentblock-image'>
+            <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
+              require('../assets/content/adamFoto.png')
+              :
+              require('../assets/content/adamFoto.png')}
+            />
+          </div>
+        
+       <div className='contentblock-text'>
             <div className='contentblock-tagrow'>
               <h2>BENAYIBA ADAM</h2>
               <Tag color="green">Full Stack Web Developer</Tag>
@@ -87,28 +93,23 @@ function Content() {
               We will be discussing the language of disability as well
               as bringing awareness with your community interactions.
             </p>
-          
             <div className='socials'>
          
-          <a title='Twitter' href="https://twitter.com/" target="_blank" rel='noreferrer'>
-            <TwitterIcon className='social-icon' />
-          </a>
-          <a title='GitHub' href="https://github.com/adambenajiba" target="_blank" rel='noreferrer'>
-            <GitHubIcon className='social-icon' />
-          </a>
-        
-          <a title='LinkedIn' href="https://www.linkedin.com/" target="_blank" rel='noreferrer'>
-            <LinkedInIcon className='social-icon' />
-          </a>
-        </div>
+         <a title='Twitter' href="https://twitter.com/" target="_blank" rel='noreferrer'>
+           <TwitterIcon className='social-icon' />
+         </a>
+         <a title='GitHub' href="https://github.com/adambenajiba" target="_blank" rel='noreferrer'>
+           <GitHubIcon className='social-icon' />
+         </a>
+       
+         <a title='LinkedIn' href="https://www.linkedin.com/" target="_blank" rel='noreferrer'>
+           <LinkedInIcon className='social-icon' />
+         </a>
+       </div>
+       
           </div>
-          <div className='contentblock-image'>
-            <img className='no-touch1' draggable={false} alt='' src={theme === 'dark' ?
-              require('../assets/content/adamFoto.png')
-              :
-              require('../assets/content/adamFoto.png')}
-            />
-          </div>
+          
+         
         </ContentBlock>
 
         <ContentBlock animate>

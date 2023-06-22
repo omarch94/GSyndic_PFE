@@ -138,7 +138,7 @@ class FactureController extends Controller
         $factures = Facture::get();
   
         $data = [
-            'title' => 'Welcome to Gsyndic.com',
+            'title' => 'GSyndic',
             'date' => date('m/d/Y'),
             'factures' => $factures
         ]; 
