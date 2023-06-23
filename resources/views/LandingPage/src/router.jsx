@@ -13,7 +13,7 @@ const router = browserRouter(
       <Route index element={<Home />} />
 
       {/* Pages */}
-      <Route path="content" element={<Content />} />
+      <Route path="team" element={<Content />} />
       <Route path="applications" element={<Applications />} />
 
       {/* Fallback Route */}

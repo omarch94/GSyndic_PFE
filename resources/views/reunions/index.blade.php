@@ -13,7 +13,7 @@
 
 @section('content')
     @include('components.messages_alert')
-       <a href="/reunions/generate-pdf/" >telecharger l'état des réunions</a>
+      <button style="background: rgb(173, 45, 45) ; border-radius:10px"> <a href="/reunions/generate-pdf/" style="color: white ;font-weight:bolder" >telecharger l'état des réunions</a> </button>
 
     <div class="section_table">
         <div class="">

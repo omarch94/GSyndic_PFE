@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 const links = [
   {
     name: "L'équipe",
-    destination: "content",
+    destination: "team",
   },
   // {
   //   name: "L'équipe",

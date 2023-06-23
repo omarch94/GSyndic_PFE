@@ -49,7 +49,8 @@ function Content() {
               <Tag color="red">Full Stack Web Developer</Tag>
             </div>
             <p>
-            Passionné et polyvalent qui a su réorienter sa carrière avec succès. Avec un bagage initial en finance, Omar a entrepris une reconversion audacieuse dans le domaine du développement web. Grâce à sa détermination et à sa volonté d'apprendre, il a acquis une expertise solide en langages front-end tels que HTML, CSS et JavaScript, ainsi qu'en frameworks modernes comme React et Angular. Du côté du développement back-end, Omar s'est spécialisé dans des langages comme Python et Node.js, tout en développant des compétences en gestion de bases de données. Sa combinaison unique de connaissances en finance et en développement web lui permet de créer des applications web complètes, intuitives et adaptées aux besoins spécifiques du secteur financier. Omar est un exemple inspirant de reconversion réussie et démontre la volonté d'évoluer et d'explorer de nouvelles opportunités professionnelles.            </p>
+            Je suis Omar, un passionné de développement web qui s'est réorienté avec succès depuis la finance. Expert en langages front-end (HTML, CSS, JavaScript) et frameworks (React, Vue). Spécialisé en Laravel, Node.js et gestion de bases de données. Crée des applications web adaptées au secteur financier. Un exemple inspirant de reconversion réussie. Toujours prêt à apprendre et à évoluer.            
+            </p>
             {/* <div className='contentblock-actions'>
               <PrimaryButton text="Watch Video" ext destination="https://www.youtube.com/watch?v=nefJID_9Jug" arrow />
             </div> */}
@@ -90,8 +91,7 @@ function Content() {
               <Tag color="green">Full Stack Web Developer</Tag>
             </div>
             <p>
-              We will be discussing the language of disability as well
-              as bringing awareness with your community interactions.
+            Je suis Adam, un passionné de développement web . Expert en langages front-end (HTML, CSS, JavaScript) et frameworks (React, Vue). Spécialisé en Laravel, Node.js et gestion de bases de données. Crée des applications web adaptées au secteur financier. Un exemple inspirant de reconversion réussie. Toujours prêt à apprendre et à évoluer.            
             </p>
             <div className='socials'>
          
@@ -119,8 +119,7 @@ function Content() {
               <Tag color="red">Full Stack Web Developer</Tag>
             </div>
             <p>
-              We will be discussing the language of disability as well
-              as bringing awareness with your community interactions.
+            Je suis Jihad, un passionné de développement web . Expert en langages front-end (HTML, CSS, JavaScript) et frameworks (React, Vue). Spécialisé en Laravel, Node.js et gestion de bases de données. Crée des applications web adaptées au secteur financier. Un exemple inspirant de reconversion réussie. Toujours prêt à apprendre et à évoluer.            
             </p>
            
             <div className='socials'>
